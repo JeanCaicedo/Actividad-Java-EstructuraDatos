@@ -23,7 +23,7 @@ Permite registrar consumos, consultarlos y obtener estadísticas básicas.
 ## Compilación y ejecución
 
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/JeanCaicedo/Actividada-Java-ESTDATOS
 
 # 2. Entrar al directorio del proyecto
 cd tu-repositorio/pryreciboagua
