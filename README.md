@@ -1,37 +1,46 @@
-# Gestor de Recibos de Agua
+# Actividada-Java-ESTDATOS
 
-## Descripción
-Aplicación Java que permite gestionar recibos de agua mediante una interfaz gráfica sencilla con `JOptionPane`.  
-Permite registrar consumos, consultarlos y obtener estadísticas básicas.
+Ejercicio académico de la asignatura de Estructura de Datos: gestor de recibos de agua en Java con interfaz por `JOptionPane`.
 
-## Características
-- Agregar nuevos recibos de agua con:
-  - Número de referencia  
-  - Estrato  
-  - Consumo en m³  
-  - Valor a pagar  
-- Mostrar todos los recibos cargados.  
-- Calcular el total de recibos registrados.  
-- Calcular el total de metros cúbicos consumidos.  
-- Calcular el valor promedio a pagar.  
-- Salir de la aplicación.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Swing](https://img.shields.io/badge/Swing-007396?style=for-the-badge&logo=java&logoColor=white)
 
+## Contexto
 
-## Requisitos
-- Java SE Development Kit (JDK) 8 o superior.
+Actividad pequeña de la asignatura de Estructura de Datos. La aplicación permite registrar recibos de agua (número de referencia, estrato, consumo en m³ y valor a pagar), listarlos y calcular totales y promedios básicos. Los datos se guardan en memoria dentro de un `ArrayList` durante la ejecución, sin persistencia.
 
-## Compilación y ejecución
+> Nota: el nombre del repositorio contiene un typo (`Actividada` en vez de `Actividad`). GitHub permite renombrarlo sin romper clones existentes gracias al redirect automático.
 
-# 1. Clonar el repositorio
+## Tecnologías
+
+- Java SE (JDK 8 o superior)
+- `javax.swing.JOptionPane` para los diálogos de entrada/salida
+- `java.util.ArrayList` como estructura de datos en memoria
+
+## Ejecución
+
+Clonar el repositorio y compilar los dos archivos Java:
+
+```bash
 git clone https://github.com/JeanCaicedo/Actividada-Java-ESTDATOS
-
-# 2. Entrar al directorio del proyecto
-cd tu-repositorio/pryreciboagua
-
-# 3. Compilar las clases
-javac *.java
-
-# 4. Ejecutar la aplicación
+cd Actividada-Java-ESTDATOS
+javac -d . ReciboAgua.java pryreciboagua.java
 java pryreciboagua.pryreciboagua
+```
 
+Ambas clases pertenecen al paquete `pryreciboagua`, así que la compilación genera la carpeta `pryreciboagua/` con los `.class` correspondientes.
 
+## Estructura
+
+```
+Actividada-Java-ESTDATOS/
+├── ReciboAgua.java       # clase modelo (referencia, estrato, m³, valor)
+├── pryreciboagua.java    # clase principal con el menú JOptionPane
+└── README.md
+```
+
+El menú ofrece: agregar recibo, mostrar recibos, total de recibos, total de m³ consumidos, valor promedio a pagar y salir.
+
+## Autor
+
+Jean Caicedo — [@JeanCaicedo](https://github.com/JeanCaicedo)
