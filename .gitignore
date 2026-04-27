@@ -1,0 +1,34 @@
+# Compilados
+*.class
+
+# Build NetBeans / Java
+build/
+nbbuild/
+nbdist/
+nb-configuration.xml
+nbactions.xml
+nbproject/private/
+
+# Empaquetados
+*.jar
+*.war
+*.ear
+
+# Logs JVM
+*.log
+hs_err_pid*
+
+# IDE - IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# IDE - Eclipse
+.classpath
+.project
+.settings/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
